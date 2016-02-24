@@ -1,0 +1,6 @@
+<div>
+
+  <ul ng-repeat='car in cars'>
+    <a ui-sref="car({carId:car.$id})">{{car.year}} {{car.make}} {{car.model}}</a>
+  </ul>
+</div>
