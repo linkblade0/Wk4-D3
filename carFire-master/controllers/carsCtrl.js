@@ -3,10 +3,4 @@ angular.module('myApp')
 
   $scope.cars = $firebaseArray(carsRef)
 
-
-
-
-
-
-
 })
