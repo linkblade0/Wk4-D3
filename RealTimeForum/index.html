@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='rtfmApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Real Time Forum</title>
+  </head>
+  <body>
+
+
+    <div class="container" ui-view></div>
+
+
+    <!--AngularJS-->
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js'></script>
+    <!--Firebase-->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <!--Angular Fire-->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
+    <!--UI Router -->
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js'></script>
+    <!--My js files-->
+    <script src='./app.js'></script>
+    <script src='controllers/threadsCtrl.js'></script>
+    <script src='services/threadService.js'></script>
+    <script src='controllers/threadIdCtrl.js'></script>
+  </body>
+</html>
