@@ -5,7 +5,7 @@ angular.module('rtfmApp', ['ui.router', 'firebase'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/threads')
+  $urlRouterProvider.otherwise('/login')
 
   $stateProvider
     .state('threads', {
@@ -33,5 +33,22 @@ angular.module('rtfmApp', ['ui.router', 'firebase'])
       }
     })
 
-    
+    .state('login', {
+      url: '/login',
+      templateUrl: 'views/login.html',
+      controller: 'loginCtrl'
+    })
+
+    .state('signup', {
+      url: '/signup',
+      templateUrl: 'views/signup.html',
+      controller: 'signupCtrl'
+    })
+
+    .state('logout', {
+      url: '/logout',
+      controller: function(userService) {
+        return userService.logout();
+      }
+    })
 })
